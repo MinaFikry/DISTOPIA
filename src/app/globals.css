@@ -6,6 +6,12 @@
   --primary: #fd0303;
   --white: #ffffff;
   --black: #000000;
+  --linearColor:  linear-gradient(
+    90deg,
+    rgba(248, 19, 19, 0.7) 0%,
+    rgba(146, 11, 11, 0.42) 100%
+  );
+
 }
 
 @media (prefers-color-scheme: dark) {
