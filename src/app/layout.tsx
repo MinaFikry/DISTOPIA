@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { SquadaOneFont, JungeFont } from "../../utils/fonts";
 import "./globals.css";
 
 
@@ -15,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${SquadaOneFont} ${JungeFont} antialiased`}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

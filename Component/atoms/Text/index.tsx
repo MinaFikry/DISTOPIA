@@ -5,6 +5,7 @@ import { TextProps } from "./types";
 export default function Text({
   children,
   style,
+  className = "",
   fontSize = 12,
   color = COLORS.light,
   fontFamily = SquadaOneFont,
@@ -14,13 +15,12 @@ export default function Text({
   const textStyle = {
     fontSize,
     color,
-    fontFamily,
     lineHeight,
     ...style,
   };
 
   return (
-    <p style={textStyle} {...otherProps}>
+    <p className={`${className} ${fontFamily}`} style={textStyle} {...otherProps}>
       {children}
     </p>
   );
